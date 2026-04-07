@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed Asik K | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Project Styles -->
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body>
+  <!-- Custom Cursor Glow -->
+  <div class="cursor-glow"></div>
+
+  <!-- Background Canvas for Particles -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="nav-container glass">
+      <a href="#home" class="logo">Asik<span>.developer</span></a>
+
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-label="Toggle Dark/Light Mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <div class="mobile-menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="hero section-spacing">
+      <div class="container hero-content">
+        <div class="hero-text slide-up">
+          <p class="greeting">Hello, I'm</p>
+          <h1 class="name glisten">Mohamed Asik K</h1>
+          <h2 class="title text-neon">IT Student | Web Developer</h2>
+          <p class="tagline">"<span id="typewriter"></span><span class="cursor">|</span>"</p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+          <div class="social-links-hero mt-4">
+            <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="hero-image-container float-anim">
+          <div class="img-glow"></div>
+          <img src="https://eu-central.storage.cloudconvert.com/tasks/dbdd5334-ff78-4a06-8e3b-55ce8182381e/WhatsApp%20Image%202026-01-19%20at%2011.58.03%20AM.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20260407%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20260407T055249Z&X-Amz-Expires=86400&X-Amz-Signature=b2a0c76c23cdf9597ba4637cb9b1a406738238f7944bc1638df7c326ad17eab8&X-Amz-SignedHeaders=host&response-content-disposition=inline%3B%20filename%3D%22WhatsApp%20Image%202026-01-19%20at%2011.58.03%20AM.jpg%22&response-content-type=image%2Fjpeg&x-id=GetObject"
+            alt="Mohamed Asik K" class="profile-img">
+        </div>
+      </div>
+      <a href="#about" class="scroll-down">
+        <i class="fa-solid fa-chevron-down bounce"></i>
+      </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-spacing">
+      <div class="container">
+        <h2 class="section-title">About <span class="text-neon">Me</span></h2>
+        <div class="about-grid">
+          <div class="about-img-box glass antigravity-card hidden-element">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=500&h=400&fit=crop"
+              alt="Developer Working" class="rounded-img">
+          </div>
+          <div class="about-text-box hidden-element">
+            <p>I am a passionate <strong>IT Student and Web Developer</strong> focused on building modern, responsive, and user-friendly web applications. I enjoy turning complex ideas into clean, elegant, and interactive designs.</p>
+            <p>I have hands-on experience in front-end development and continuously improve my skills by working on real-world projects. I am always eager to learn new technologies and stay updated with the latest trends in web development..</p>
+            <ul class="about-details mt-2">
+  <li><i class="fa-solid fa-graduation-cap text-neon"></i> Education: B.Tech/IT</li>
+  <li><i class="fa-solid fa-code text-neon"></i> Focus: Front-End Development</li>
+  <li><i class="fa-solid fa-laptop-code text-neon"></i> Skills: HTML, CSS, JavaScript, Dart</li>
+  <li><i class="fa-solid fa-location-dot text-neon"></i> Location: Chennai (Available Worldwide)</li>
+  <li><i class="fa-solid fa-envelope text-neon"></i> Email: mohamedasik.in2004@gmail.com</li>
+</ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-spacing relative">
+      <div class="container">
+        <h2 class="section-title">My <span class="text-neon">Skills</span></h2>
+        <div class="skills-grid">
+
+          <!-- Skill Card -->
+          <div class="skill-card glass antigravity-card hidden-element delay-1">
+            <div class="skill-header">
+              <i class="fa-brands fa-html5 skill-icon" style="color: #e34f26;"></i>
+              <h3>HTML / CSS</h3>
+            </div>
+            <div class="progress-wrap">
+              <div class="progress-bar" data-progress="95%"></div>
+            </div>
+          </div>
+
+          <!-- Skill Card -->
+          <div class="skill-card glass antigravity-card hidden-element delay-2">
+            <div class="skill-header">
+              <i class="fa-brands fa-css3-alt skill-icon" style="color: #1572b6;"></i>
+              <h3>Dart</h3>
+            </div>
+            <div class="progress-wrap">
+              <div class="progress-bar" data-progress="90%"></div>
+            </div>
+          </div>
+
+          <!-- Skill Card -->
+          <div class="skill-card glass antigravity-card hidden-element delay-3">
+            <div class="skill-header">
+              <i class="fa-brands fa-js skill-icon" style="color: #f7df1e;"></i>
+              <h3>JavaScript</h3>
+            </div>
+            <div class="progress-wrap">
+              <div class="progress-bar" data-progress="85%"></div>
+            </div>
+          </div>
+
+          <!-- Skill Card -->
+          <div class="skill-card glass antigravity-card hidden-element delay-4">
+            <div class="skill-header">
+              <i class="fa-brands fa-react skill-icon" style="color: #61dafb;"></i>
+              <h3>Python</h3>
+            </div>
+            <div class="progress-wrap">
+              <div class="progress-bar" data-progress="80%"></div>
+            </div>
+          </div>
+
+          <!-- Skill Card -->
+          <div class="skill-card glass antigravity-card hidden-element delay-5">
+            <div class="skill-header">
+              <i class="fa-solid fa-database skill-icon" style="color: #336791;"></i>
+              <h3>SQL / NoSQL</h3>
+            </div>
+            <div class="progress-wrap">
+              <div class="progress-bar" data-progress="75%"></div>
+            </div>
+          </div>
+
+          <!-- Skill Card -->
+          <div class="skill-card glass antigravity-card hidden-element delay-6">
+            <div class="skill-header">
+              <i class="fa-brands fa-git-alt skill-icon" style="color: #f05032;"></i>
+              <h3>Git / GitHub</h3>
+            </div>
+            <div class="progress-wrap">
+              <div class="progress-bar" data-progress="88%"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-spacing">
+      <div class="container">
+        <h2 class="section-title">My <span class="text-neon">Projects</span></h2>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card glass antigravity-card hidden-element">
+            <div class="project-img-wrapper">
+              <img src="https://png.pngtree.com/png-clipart/20200701/original/pngtree-green-agricultural-rice-png-image_5411777.jpg"
+                alt="Evergreen App" class="project-img">
+              <div class="project-overlay">
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Evergreen App</h3>
+              <p>An agriculture and weather tracking application to help farmers optimize their crop yields through
+                modern technology.</p>
+              <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card glass antigravity-card hidden-element delay-1">
+            <div class="project-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1618761714954-0b8cd0026356?q=80&w=500&h=300&fit=crop"
+                alt="Auth Service" class="project-img">
+              <div class="project-overlay">
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Login Page UI</h3>
+              <p>A beautifully designed, secure login and authentication screen featuring glassmorphism and modern
+                aesthetics.</p>
+              <div class="tags">
+                <span class="tag">CSS</span>
+                <span class="tag">HTML</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card glass antigravity-card hidden-element delay-3">
+            <div class="project-img-wrapper">
+              <img src="https://png.pngtree.com/png-vector/20220127/ourmid/pngtree-big-isolated-motorcycle-vector-colorful-icons-flat-illustrations-of-delivery-by-png-image_4366928.png"
+                alt="Raro Food Delivery App UI showing online food ordering and delivery system" class="project-img">
+              <div class="project-overlay">
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Raro Food Delivery App</h3>
+              <p>A user-friendly food delivery app for browsing restaurants, ordering meals, and real-time delivery tracking.</p>
+              <div class="tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">Flutter</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card glass antigravity-card hidden-element delay-4">
+            <div class="project-img-wrapper">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_qrpQfLSwJ4Eg2IAPBw6WYN-HaIVgZ4O4tw&s"
+                alt="Tic Tac Toe game interface preview" class="project-img">
+              <div class="project-overlay">
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Tic Tac Toe App</h3>
+              <p>An interactive Tic Tac Toe game featuring responsive design, smooth gameplay, and a clean modern UI built with HTML, CSS, and JavaScript.</p>
+              <div class="tags">
+                <span class="tag">Flutter</span>
+                <span class="tag">Dart</span>
+                <span class="tag">Android Studio</span>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+  <h2>Contact Me</h2>
+
+  <form id="contactForm">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <p id="form-status"></p>
+</section>
+
+<script type="module" src="./src/script.js"></script>
+  </main>
+
+  <footer class="glass footer">
+    <div class="container footer-content">
+      <div class="footer-logo">Asik<span>.dev</span></div>
+      <p class="copyright">&copy; 2026 Mohamed Asik K. All rights reserved.</p>
+      <div class="social-links-footer">
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
